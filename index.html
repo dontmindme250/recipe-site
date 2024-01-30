@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title> Recipe site</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<nav>
+		<h2>Recipe site</h2>
+		<div class="nav-links">
+			<ul>
+				<li><a href="/library">recipe library</a></li>
+				<li><a href="/about">about</a></li>
+			</ul>
+		</div>  
+	</nav>
+
+	<header>
+		<div class="hero">
+			<h1>Recipes</h1>
+			<p>recipe site</p>
+		</div>
+		<div class="search-box">
+			<input type="text" id="searchInput" placeholder="Search for recipes...">
+			<button onclick="searchRecipes()">Search</button>
+		</div>
+	</header>
+
+	<!-- Additional search filter inputs -->
+	<div class="search-filters">
+		<select id="dietFilter">
+			<option value="">Select Diet Type</option>
+			<option value="balanced">Balanced</option>
+			<option value="high-protein">High-Protein</option>
+			<option value="low-fat">Low-Fat</option>
+			<option value="low-carb">Low-Carb</option>
+		</select>
+		<select id="healthFilter">
+			<option value="">Select Health Labels</option>
+			<option value="vegan">Vegan</option>
+			<option value="vegetarian">Vegetarian</option>
+			<option value="sugar-conscious">Sugar-Conscious</option>
+			<option value="peanut-free">Peanut-Free</option>
+			<option value="tree-nut-free">Tree-Nut-Free</option>
+			<option value="alcohol-free">Alcohol-Free</option>
+		</select>
+		<!-- You can add inputs for calorie range and other filters here -->
+	</div>
+
+
+	<main>
+		<section id="featured-recipes">
+			<h3>Featured Recipes</h3>
+			<div class="recipes-grid">
+				<!-- Featured recipes will be populated here -->
+			</div>
+		</section>
+
+		<div class="pagination-controls">
+		</div>
+		<div class="recipes-grid">
+		</div>
+		<div class="pagination">
+		</div>
+		
+
+		<section class="how-it-works">
+			<h3>How It Works</h3>
+			<p>To get started, simply search for a recipe by category or ingredient. You can also browse through our featured recipes to find something new and exciting. When you find a recipe you love, you can save it to your account or share it with friends.</p>
+		</section>
+
+		<section class="shopping-list">
+			<h3>Ingreidents List</h3>
+			<ul></ul>
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
